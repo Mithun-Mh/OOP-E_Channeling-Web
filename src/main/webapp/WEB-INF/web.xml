@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	<servlet>
+
+
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>channel.Customer.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+
+
+		<servlet-name>CustomerInsert</servlet-name>
+		<servlet-class>channel.Customer.InsertCustomerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CustomerInsert</servlet-name>
+		<url-pattern>/CustomerInsert</url-pattern>
+	</servlet-mapping>
+	<servlet>
+
+
+		<servlet-name>UpdateCustomerServlet</servlet-name>
+		<servlet-class>channel.Customer.UpdateCustomerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateCustomerServlet</servlet-name>
+		<url-pattern>/UpdateCustomerServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+
+
+		<servlet-name>DeleteCustomerServlet</servlet-name>
+		<servlet-class>channel.Customer.DeleteCustomerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteCustomerServlet</servlet-name>
+		<url-pattern>/DeleteCustomerServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+
+
+		<servlet-name>AdminServlet</servlet-name>
+		<servlet-class>train.Customer.AdminServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminServlet</servlet-name>
+		<url-pattern>/AdminServlet</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+	
+	
+	<servlet>
+         <servlet-name>search</servlet-name>
+         <servlet-class>channel.Booking.BookingServlet</servlet-class>
+         </servlet>
+         
+         <servlet-mapping>
+         <servlet-name>search</servlet-name>
+         <url-pattern>/search</url-pattern>
+         </servlet-mapping>
+         
+         <servlet>
+         <servlet-name>confirmReservation</servlet-name>
+         <servlet-class>channel.Booking.ReservationMakeServlet</servlet-class>
+         </servlet>
+         
+         <servlet-mapping>
+         <servlet-name>confirmReservation</servlet-name>
+         <url-pattern>/confirmReservation</url-pattern>
+         </servlet-mapping>
+         
+         <servlet>
+         <servlet-name>UpdateReservation</servlet-name>
+         <servlet-class>channel.Booking.UpdateReservationServlet</servlet-class>
+         </servlet>
+         
+         <servlet-mapping>
+         <servlet-name>UpdateReservation</servlet-name>
+         <url-pattern>/UpdateReservation</url-pattern>
+         </servlet-mapping>
+         
+         <servlet>
+         <servlet-name>DeleteReservation</servlet-name>
+         <servlet-class>channel.Booking.DeleteReservationServlet</servlet-class>
+         </servlet>
+         
+         <servlet-mapping>
+         <servlet-name>DeleteReservation</servlet-name>
+         <url-pattern>/DeleteReservation</url-pattern>
+         </servlet-mapping>
+         
+         
+         
+         
+         
+         
+         
+         <servlet>
+		<servlet-name>AddcardDetails</servlet-name>
+		<servlet-class>channel.Payment.AddCardDetailsServlet</servlet-class>
+	    </servlet>
+	    <servlet-mapping>
+		<servlet-name>AddcardDetails</servlet-name>
+		<url-pattern>/AddcardDetails</url-pattern>
+	    </servlet-mapping>
+	    
+	    <servlet>
+	    <servlet-name>GetCardDetails</servlet-name>
+	    <servlet-class>channel.Payment.GetCardDetailsServlet</servlet-class>
+	    </servlet>
+	    <servlet-mapping>
+		<servlet-name>GetCardDetails</servlet-name>
+		<url-pattern>/GetCardDetails</url-pattern>
+	    </servlet-mapping>
+	    
+	    <servlet>
+	    <servlet-name>UpdateCardDetails</servlet-name>
+	    <servlet-class>channel.Payment.UpdateCardDetailsServlet</servlet-class>
+	    </servlet>
+	    <servlet-mapping>
+		<servlet-name>UpdateCardDetails</servlet-name>
+		<url-pattern>/UpdateCardDetails</url-pattern>
+	    </servlet-mapping>
+	    
+	    
+	    <servlet>
+	    <servlet-name>DeleteCardDetails</servlet-name>
+	    <servlet-class>channel.Payment.DeleteCardDetailsServlet</servlet-class>
+	    </servlet>
+	    <servlet-mapping>
+		<servlet-name>DeleteCardDetails</servlet-name>
+		<url-pattern>/DeleteCardDetails</url-pattern>
+	    </servlet-mapping>
+	    
+	    
+	    
+	    
+	    
+	    <servlet>
+        	<servlet-name>SearchTimes</servlet-name>
+        	<servlet-class>channel.Timetable.SearchServlet</servlet-class>
+        </servlet>
+        <servlet-mapping>
+        	<servlet-name>SearchTimes</servlet-name>
+        	<url-pattern>/SearchTimes</url-pattern>
+        </servlet-mapping>
+        
+        <servlet>
+        	<servlet-name>InsertDoctorServlet</servlet-name>
+        	<servlet-class>channel.Timetable.AdminTimetableInsertServlet</servlet-class>
+        </servlet>
+		<servlet-mapping>
+        	<servlet-name>InsertDoctorServlet</servlet-name>
+        	<url-pattern>/InsertDoctorServlet</url-pattern>
+        </servlet-mapping>
+        
+        <servlet>
+        	<servlet-name>UpdateDoctorServlet</servlet-name>
+        	<servlet-class>channel.Timetable.AdminTimetableUpdateServlet</servlet-class>
+        </servlet>
+		<servlet-mapping>
+        	<servlet-name>UpdateDoctorServlet</servlet-name>
+        	<url-pattern>/UpdateDoctorServlet</url-pattern>
+        </servlet-mapping>
+        
+        <servlet>
+        	<servlet-name>DeleteDoctorServlet</servlet-name>
+        	<servlet-class>channel.Timetable.AdminTimetableDeleteServlet</servlet-class>
+        </servlet>
+		<servlet-mapping>
+        	<servlet-name>DeleteDoctorServlet</servlet-name>
+        	<url-pattern>/DeleteDoctorServlet</url-pattern>
+        </servlet-mapping>
+</web-app>
